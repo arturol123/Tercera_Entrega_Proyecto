@@ -1,0 +1,54 @@
+#cards{
+    margin-left: 20px;
+}
+
+img:hover {
+    transform: scale(1.2);
+  }
+
+.card{
+    box-shadow: 5px 5px 5px $BlackColor;
+    
+}
+.card:hover{
+
+    box-shadow: 10px 10px 5px $BlackColor;
+    transform: scale(1.1);
+}
+
+@mixin CardsGral {
+    color: blue;
+    size: 25px;
+    text-align: justify;
+    text-shadow: 2px;
+    text-indent: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    
+}
+
+.Card1{
+    @include CardsGral();
+    color: blue;
+
+}
+
+.Card2{
+    @include CardsGral();
+    color:green;
+}
+
+.Card3{
+    @include CardsGral();
+    color: red;
+}
+
+.Card4{
+    @include CardsGral();
+    color: gray;
+}
+
+.Card5{
+    @include CardsGral();
+    color: rgb(153, 9, 248);
+}
+
